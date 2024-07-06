@@ -1,0 +1,127 @@
+body {
+    background-image: url("../images/bg-home.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.space-header {
+    max-width: 1385px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.space-logo{
+    margin-right: 507px;
+}
+
+.space-line{
+    width: 473px;
+    height: 2px;
+    background-color: rgb(73, 72, 72);
+    z-index: 10;
+    position: absolute;
+    left: 160px;
+}
+
+.space-header-wrapper {
+    @include display($items:center, $space:center, $gap:0px);
+    position: relative;
+}
+.space-header-navbar {
+    max-width: 830px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.04);
+}
+.space-navbar-list {
+    @include display($items:center, $space:center, $gap:50px);
+    padding-top: 39px;
+    padding-bottom: 39px;
+    padding-left: 123px;
+    padding-right: 167px;
+}
+
+.space-navbar-item1:hover {
+    
+    &::after{
+        content: "";
+        position: absolute;
+        width: 104px;
+        height: 3px;
+        bottom: 0px;
+        left: 100px;
+        background-color: rgba(255, 255, 255, 1);
+    }
+}
+.space-navbar-item2:hover {
+    
+    &::after{
+        content: "";
+        position: absolute;
+        width: 104px;
+        height: 3px;
+        bottom: 0px;
+        left: 225px;
+        background-color: rgba(255, 255, 255, 1);
+    }
+}
+.space-navbar-item3:hover {
+    
+    &::after{
+        content: "";
+        position: absolute;
+        width: 104px;
+        height: 3px;
+        bottom: 0px;
+        left: 350px;
+        background-color: rgba(255, 255, 255, 1);
+    }
+}
+.space-navbar-item4:hover {
+    
+    &::after{
+        content: "";
+        position: absolute;
+        width: 104px;
+        height: 3px;
+        bottom: 0px;
+        background-color: rgba(255, 255, 255, 1);
+    }
+}
+
+.space-navbar-link {
+    @include display($items:center, $space:none, $gap:11px);
+    @include textStyle($FS:16px, $FW:400, $LH:19px, $MB:0px, $CLR:white);
+}
+
+.space-hero {
+    margin-top: 251px;
+}
+.space-hero-wrapper {
+    @include display($items:none, $space:space-between, $gap:0px);
+}
+.space__hero-content {
+    max-width: 354px;
+}
+.hero-content-text1 {
+    @include textStyle($FS:28px, $FW:400, $LH:34px, $MB:0px, $CLR:#D0D6F9);
+}
+.hero-content-title {
+    @include textStyle($FS:150px, $FW:400, $LH:172px, $MB:0px, $CLR:#D0D6F9);
+}
+.hero-content-text2 {
+    @include textStyle($FS:18px, $FW:400, $LH:33px, $MB:0px, $CLR:#D0D6F9);
+    
+}
+.space-explore {
+    background-color: white;
+    width: 274px;
+    height: 274px;
+    text-align: center;
+    border-radius: 100%;
+    margin-top: 70px;
+}
+.space-explore-text {
+    @include textStyle($FS:32px, $FW:400, $LH:37px, $MB:0px, $CLR:#0B0D17);
+    padding-top: 119px;
+}
+
